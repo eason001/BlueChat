@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/logo"
+		android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/ic_logo" />
+	<EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/username"
+        android:hint="@string/Username"
+        android:layout_gravity="center_horizontal"
+        android:maxLength="20"
+        android:layout_marginTop="20dp"
+        android:background="#ffffffff"
+        android:inputType="textShortMessage|text"
+        android:gravity="center" />
+    
+    <SeekBar
+        android:id="@+id/interval"
+        android:layout_width="216dp"
+        android:layout_gravity="center_horizontal"
+        android:max="10"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/P2P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="P2P" />
+
+    
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/login"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff" />
+
+
+</LinearLayout>
